@@ -1,8 +1,9 @@
 module.exports = {
     entry: {
-        "index":"./src/index.ts",
-        "demo":"./src/demos/index.tsx"
+        "index": "./src/index.ts",
+        "demo": "./src/demos/index.tsx"
     },
+    mode: "development",
     output: {
         filename: "[name].js",
         path: __dirname + "/dist"
@@ -34,4 +35,7 @@ module.exports = {
         "react": "React",
         "react-dom": "ReactDOM"
     },
+    devServer: {
+        contentBase: __dirname
+    }
 };
