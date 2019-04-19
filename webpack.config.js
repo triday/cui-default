@@ -1,14 +1,13 @@
 module.exports = {
     entry: {
-        "index": "./src/index.ts",
-        "demo": "./src/demos/index.tsx"
+        "index": "./src/index.ts"
     },
     mode: "development",
     output: {
         filename: "[name].js",
         path: __dirname + "/dist"
     },
-
+    
     // Enable sourcemaps for debugging webpack's output.
     devtool: "source-map",
 
